@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnGioHang, btnDonHang;
+    Button btnGioHang, btnDonHang,btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
         btnDonHang=findViewById(R.id.btnQLDonhang);
         btnGioHang=findViewById(R.id.btnQLGiohang);
+        btn2 = findViewById(R.id.button2);
         btnGioHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, DonHangActivity.class));
             }
         });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,DonHangActivity2.class));
+            }
+        });
+
     }
 
 

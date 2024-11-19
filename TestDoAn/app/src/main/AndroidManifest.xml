@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestDoAn"
         tools:targetApi="31">
-
+        <activity
+            android:name=".DonHangActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_don_hang2"
+            android:theme="@style/Theme.TestDoAn.NoActionBar" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">

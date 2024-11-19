@@ -9,7 +9,7 @@
     android:elevation="2dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <CheckBox
@@ -18,9 +18,11 @@
             />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center"
+            />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,31 +35,34 @@
                 android:text="Tên sản phẩm"
                 android:textSize="16sp"
                 android:textColor="#000000"
-                android:padding="8dp" />
+                android:paddingLeft="30dp" />
 
             <TextView
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="34.000.000đ"
-                android:layout_gravity="center"
+                android:paddingLeft="20dp"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF5722"
+                android:layout_marginLeft="30dp"
+                android:text="Xóa"/>
+
+
         </LinearLayout>
-
-
-
-        <Button
-            android:id="@+id/btnDelete"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Xóa"
-            android:backgroundTint="#FF5722"
-            android:textColor="#FFFFFF" />
-
+            android:text="SL"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
